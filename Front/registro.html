@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .signup-box {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        
+        input {
+            width: 92%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .register-text {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #480A23;
+            text-decoration: none;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #EF0037;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #480A23;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="signup-box">
+        <h2>Create Account</h2>
+        <form action="main.html">
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Apellido Paterno">
+            <input type="text" placeholder="Apellido Materno">
+            <input type="datetime" placeholder="Fecha de Nacimiento">
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button type="submit">Sign Up</button>
+            <p class="register-text">
+                You already have an account?
+                <a href="login.html">Sign in</a>
+            </p> 
+        </form>
+    </div>
+
+</body>
+</html>
+
