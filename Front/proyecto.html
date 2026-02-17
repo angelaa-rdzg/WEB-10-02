@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
@@ -13,7 +14,7 @@
             height: 100vh;
         }
 
-        .login-box {
+        .signup-box {
             background: white;
             padding: 25px;
             border-radius: 8px;
@@ -21,33 +22,18 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
-        .foto {
-            width: 200px;
-            height: auto;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
-
-        .register-text {
-            text-align: center;
-            margin-top: 15px;
-            font-size: 14px;
-            color: #480A23;
-            text-decoration: none;
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
+        
         input {
             width: 92%;
             padding: 10px;
             margin: 8px 0;
             border-radius: 4px;
             border: 1px solid #ccc;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
         }
 
         button {
@@ -63,20 +49,39 @@
         button:hover {
             background: #480A23;
         }
+
+        .back-btn {
+            position: absolute;
+            top: 15px;
+            left: 50px;   
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: white;
+            color: #480A23;
+            font-size: 28px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
     </style>
 </head>
+
 <body>
-    <img src="../Imagenes/Logo.png" class="foto">
-    <div class="login-box">
-        <h2>Welcome Back</h2>
+    <header>
+        <a href="main.html" class="back-btn">←</a>
+    </header>
+
+    <div class="signup-box">
+        <h2>Registrar Proyecto</h2>
         <form action="main.html">
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Password">
-            <button type="submit">Log In</button>
-            <p class="register-text">
-                You don’t have an account?
-                <a href="registro.html">Sign up</a>
-            </p>  
+            <input type="text" placeholder="Nombre del proyecto" required>
+            <input type="text" placeholder="Lider" required>
+            <input type="date" placeholder="Fecha de Inicio" required>
+            <input type="date" placeholder="Fecha de Finalización" required>
+            <input type="text" placeholder="Descripción" required>
+            <button type="submit">Registrar Proyecto</button>
         </form>
     </div>
 

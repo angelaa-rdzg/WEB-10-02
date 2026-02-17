@@ -60,26 +60,70 @@
             font-weight: bold;
         }
 
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            color: rgb(10, 10, 10);
+            padding: 15px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        footer {
+            background: #eee;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .add-btn {
+            position: absolute;
+            top: 15px;
+            right: 50px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: white;
+            color: #480A23;
+            font-size: 28px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
     </style>
 </head>
+
 <body>
-<div class="side-menu">
-    <h2 class="menu-title">Menu</h2>
-    <a href="#" class="menu-item">Backlog</a>
-    <a href="#" class="menu-item">Board</a>
-    <a href="#" class="menu-item">Reports</a>
-    <a href="#" class="menu-item">Releases</a>
-    <a href="#" class="menu-item">Components</a>
-    <a href="#" class="menu-item">Issues</a>
-</div>
+    <header>
+        <h2>Gestión de Proyectos</h2>
+        <a href="proyecto.html" class="add-btn">+</a>
+    </header>
 
-        <div class="tasks-container">
-            <div class="Task-tag"><h2>Task 1</h2></div>
-            <div class="Task-tag"><h2>Task 2</h2></div>
-            <div class="Task-tag"><h2>Task 3</h2></div>
-            <div class="Task-tag"><h2>Task 4</h2></div>
-        </div>
+    <div class="side-menu">
+        <h2 class="menu-title">Menu</h2>
+        <a href="#" class="menu-item">Backlog</a>
+        <a href="#" class="menu-item">Board</a>
+        <a href="#" class="menu-item">Reports</a>
+        <a href="#" class="menu-item">Releases</a>
+        <a href="#" class="menu-item">Components</a>
+        <a href="#" class="menu-item">Issues</a>
+    </div>
+
+    <div class="tasks-container">
+        <div class="Task-tag"><h2>Task 1</h2></div>
+        <div class="Task-tag"><h2>Task 2</h2></div>
+        <div class="Task-tag"><h2>Task 3</h2></div>
+        <div class="Task-tag"><h2>Task 4</h2></div>
+    </div>
+
+<footer>
+    Angela Rodriguez Garza
+</footer>
          
-
 </body>
 </html>
